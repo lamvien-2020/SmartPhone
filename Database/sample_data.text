@@ -1,0 +1,25 @@
+
+INSERT INTO `slides`(`id`, `img`, `caption`, `content`) VALUES 
+(1, `Iphone_Pro.png`, NULL, NULL ),
+(2, `Samsung_S20.png`, NULL, NULL ),
+(3, `Iphone_S11.png`, NULL, NULL ),
+(4, `Samsung_Ultra.png`, NULL, NULL );
+
+INSERT INTO `menus`(`id`, `name`, `link`) VALUES
+(1, `Home`, `HomePage` ),
+(2, `Products`, `catagory` ),
+(3, `Cart`, `listCart` ),
+(4, `Content`, NULL ),
+(5, `Content`, NULL );
+
+INSERT INTO `catagories`(`id`, `product`, `comment`) VALUES 
+(1, `Samsung`, `Samsung` ),
+(2, `IPhone`, `iphone` ),
+(3, `Other`, NULL ),
+(4, `Other`, NULL );
+
+INSERT INTO `products`(`id`, `id_catagory`, `name`, `price`, `detail`, `img`) VALUES 
+(1, 1, `Samsung_Ultra`, 1000, NULL, `b.jpg`),
+(2, 2, `Iphone_S11`, 1100, NULL, `a.jpg`),
+(3, 1, `Samsung_S20`, 1200, NULL, `d.jpg`),
+(4, 2, `Iphone_Pro`, 1300, NULL, `c.jpg`);
